@@ -1,0 +1,23 @@
+{
+  "name": "clinic-website/backend",
+  "description": "Clinic Management System Backend",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "firebase/php-jwt": "^6.10",
+    "vlucas/phpdotenv": "^5.6",
+    "razorpay/razorpay": "^2.9"
+  },
+  "autoload": {
+    "files": [
+      "src/config/database.php",
+      "src/utils/JWT.php"
+    ]
+  },
+  "config": {
+    "platform-check": false
+  }
+}
